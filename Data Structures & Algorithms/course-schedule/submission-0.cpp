@@ -2,7 +2,7 @@ class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         int V=numCourses;
-        vector<int> indegree(V,0);
+        vector<int> indegree(V,0); //khan's algo
         vector<vector<int>> adj(V);
 
         for(auto edge:prerequisites){
